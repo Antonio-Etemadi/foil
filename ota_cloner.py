@@ -223,7 +223,7 @@ class OTA:
 #         print(":extract_name_and_sha_from_repo:")
         name_and_sha = [
             {"name": self.json_name, "path": f"/{self.json_name}", "sha": 0, "type": "file"},
-            {"name": self.log_name, "path": f"/lib/logging.py", "sha": 0, "type": "file"},
+            {"name": "/logging.py", "path": f"/lib/logging.py", "sha": 0, "type": "file"},
             {"name": self.log_name, "path": f"/{self.log_name}", "sha": 0, "type": "file"},
             {"name": "lib", "path": "/lib/", "sha": 0, "type": "dir"}
         ]
