@@ -2,8 +2,8 @@ import network
 import time
 import gc
 
-initial_memory = gc.mem_alloc()
-print(initial_memory)
+#initial_memory = gc.mem_alloc()
+#print(initial_memory)
 
 
 def wifi(ssid_info,show=True , ap_ssid=None , ap_password=None):
@@ -51,7 +51,7 @@ ssid_info1 = {
     'Antonio': 'aaaa1370'
 }
 wifi(ssid_info1 )
-gc.collect()
-memory_after_gc = gc.mem_alloc()
-print(memory_after_gc)
-print(initial_memory-memory_after_gc)
+#gc.collect()
+#memory_after_gc = gc.mem_alloc()
+#print(memory_after_gc)
+#print(initial_memory-memory_after_gc)
