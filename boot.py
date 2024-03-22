@@ -51,7 +51,7 @@ ssid_info1 = {
     'Antonio': 'aaaa1370'
 }
 wifi(ssid_info1 )
-#gc.collect()
+gc.collect()
 #memory_after_gc = gc.mem_alloc()
 #print(memory_after_gc)
 #print(initial_memory-memory_after_gc)
