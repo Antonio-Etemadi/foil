@@ -5,6 +5,7 @@ import json
 import time
 import sys
 import mip
+import ntptime
 try:
     import logging
 except :
@@ -40,6 +41,7 @@ class OTA:
 #============================================
     def setup_logging(self):
 #         print(":setup_logging:")
+        ntptime.settime()
         current_time = time.localtime()
         asctime = "{:04d}-{:02d}-{:02d} {:02d}:{:02d}:{:02d}".format(*current_time)
 
