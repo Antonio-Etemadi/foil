@@ -289,7 +289,7 @@ class OTA:
         gc.collect()
         memory_after_gc = gc.mem_alloc()
         cleaned_memory=(initial_memory-memory_after_gc)/1000
-        print(f"\033[41mcleaned memory {cleaned_memory} KB\033[0m")
+        self.logger_console.info(f"\033[41mcleaned memory {cleaned_memory} KB\033[0m")
 #============================================================
 if __name__ == "__main__":
     url = "github.com/repos/Antonio-Etemadi/foil"
