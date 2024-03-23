@@ -55,19 +55,5 @@ wifi(ssid_info1 )
 #memory_after_gc = gc.mem_alloc()
 #print(memory_after_gc)
 #print(initial_memory-memory_after_gc)
-try :
-    from ota_cloner import OTA
-except :
-    import urequests as requests
 
-    url = "https://raw.githubusercontent.com/Antonio-Etemadi/foil/main/ota_cloner.py"
-    response = requests.get(url)
-
-    if response.status_code == 200:
-        with open("ota_cloner.py", "wb") as file:
-            file.write(response.content)
-        print("File downloaded successfully.")
-        
-    else:
-        print("Failed to download the file.")
-    gc.collect()
+gc.collect()
