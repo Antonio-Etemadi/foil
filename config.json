@@ -1,0 +1,10 @@
+{
+    "wifi": {
+        "SSID": "11wellnesspeak club",
+        "password": "wpclub2023",
+        "attempts": 3,
+        "delay_in_msec": 200
+    },
+    "server": "ws://94.120.178.45:8000/ws/",
+    "socket_delay_ms": 5
+}
