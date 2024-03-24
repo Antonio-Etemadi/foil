@@ -22,7 +22,7 @@ def update():
 
     from github_cloner import Git_cloner
     url="https://github.com/Antonio-Etemadi/foil"
-    cloner = Git_cloner(url,console_log_level="DEBUG")
+    cloner = Git_cloner(url)
     gc.collect()
     cloner.run_cloner()
 
