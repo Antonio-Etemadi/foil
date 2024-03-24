@@ -19,10 +19,11 @@ def update():
             print("File downloaded successfully.")
         else:
             print("Failed to download the file.")
-    gc.collect()
+
     from github_cloner import Git_cloner
     url="https://github.com/Antonio-Etemadi/foil"
     cloner = Git_cloner(url,console_log_level="DEBUG")
+    gc.collect()
     cloner.run_cloner()
 
 def main1():
@@ -41,7 +42,6 @@ def main1():
             user_input = stdin.read(1)
             if user_input.lower() == 'y':
                 print("\nupdating...")
-                gc.collect()
                 update()
                 
                 break
@@ -50,7 +50,7 @@ def main1():
                 break
 
     print("\nExiting updating.")
-    gc.collect()
+    
     
 async def main():
     from main_f import read_loop, blink_loop
@@ -60,6 +60,7 @@ async def main():
 
 if __name__ == "__main__":
     main1()
-    print("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+    print("========================")
+    gc.collect()
     asyncio.run(main())
 
