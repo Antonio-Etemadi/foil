@@ -30,7 +30,7 @@ def main1():
     stdin = sys.stdin
     read_list = [stdin]
     start_time = time.time()
-    max_wait_time = 3
+    max_wait_time = 5
     print("\033[33mAre you want update\033[0m")
     symbols = ['⣾', '⣷', '⣯', '⣟', '⡿', '⢿', '⣻', '⣽']
     b=0
