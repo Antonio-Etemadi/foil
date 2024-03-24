@@ -41,8 +41,9 @@ def main1():
             user_input = stdin.read(1)
             if user_input.lower() == 'y':
                 print("\nupdating...")
-                update()
                 gc.collect()
+                update()
+                
                 break
             if user_input.lower() == 'n':
                 print("\nExiting the updating...")
